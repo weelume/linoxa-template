@@ -1,0 +1,86 @@
+[
+  {
+    "src": "/templates/linoxa/screenshots/desktop-home.webp",
+    "alt": "Linoxa · 首页",
+    "device": "desktop",
+    "width": 1430,
+    "height": 993
+  },
+  {
+    "src": "/templates/linoxa/screenshots/desktop-service.webp",
+    "alt": "Linoxa · 服务",
+    "device": "desktop",
+    "width": 1430,
+    "height": 993
+  },
+  {
+    "src": "/templates/linoxa/screenshots/desktop-blog.webp",
+    "alt": "Linoxa · 期刊",
+    "device": "desktop",
+    "width": 1430,
+    "height": 993
+  },
+  {
+    "src": "/templates/linoxa/screenshots/desktop-contact.webp",
+    "alt": "Linoxa · 联系",
+    "device": "desktop",
+    "width": 1430,
+    "height": 993
+  },
+  {
+    "src": "/templates/linoxa/screenshots/tablet-home.webp",
+    "alt": "Linoxa · 首页",
+    "device": "tablet",
+    "width": 824,
+    "height": 1166
+  },
+  {
+    "src": "/templates/linoxa/screenshots/tablet-service.webp",
+    "alt": "Linoxa · 服务",
+    "device": "tablet",
+    "width": 824,
+    "height": 1166
+  },
+  {
+    "src": "/templates/linoxa/screenshots/tablet-blog.webp",
+    "alt": "Linoxa · 期刊",
+    "device": "tablet",
+    "width": 824,
+    "height": 1166
+  },
+  {
+    "src": "/templates/linoxa/screenshots/tablet-contact.webp",
+    "alt": "Linoxa · 联系",
+    "device": "tablet",
+    "width": 824,
+    "height": 1166
+  },
+  {
+    "src": "/templates/linoxa/screenshots/mobile-home.webp",
+    "alt": "Linoxa · 首页",
+    "device": "mobile",
+    "width": 380,
+    "height": 822
+  },
+  {
+    "src": "/templates/linoxa/screenshots/mobile-service.webp",
+    "alt": "Linoxa · 服务",
+    "device": "mobile",
+    "width": 380,
+    "height": 822
+  },
+  {
+    "src": "/templates/linoxa/screenshots/mobile-blog.webp",
+    "alt": "Linoxa · 期刊",
+    "device": "mobile",
+    "width": 380,
+    "height": 822
+  },
+  {
+    "src": "/templates/linoxa/screenshots/mobile-contact.webp",
+    "alt": "Linoxa · 联系",
+    "device": "mobile",
+    "width": 380,
+    "height": 822
+  }
+]

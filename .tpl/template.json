@@ -1,0 +1,404 @@
+{
+  "$schema": "./schemas/template.schema.json",
+  "format": "git-template",
+  "formatVersion": "0.2.0",
+  "id": "linoxa",
+  "version": "1.0.0",
+  "name": "Linoxa · 建筑与空间",
+  "gitUrl": "https://github.com/weelume/linoxa-template",
+  "sceneId": "corporate-site",
+  "listed": false,
+  "tags": [
+    "建筑设计",
+    "室内设计",
+    "双语",
+    "响应式"
+  ],
+  "summary": "以深蓝网格、建筑影像和动态空间叙事呈现的建筑与室内设计模板，包含39页双语内容、三套首页与作品/期刊/方案/联系布局、12个项目及9篇文章详情",
+  "accentColor": "#0f1e36",
+  "cover": "assets/desktop-home.webp",
+  "screenshots": [
+    {
+      "src": "assets/desktop-home.webp",
+      "alt": "Linoxa · 首页",
+      "device": "desktop",
+      "width": 1430,
+      "height": 993
+    },
+    {
+      "src": "assets/desktop-service.webp",
+      "alt": "Linoxa · 服务",
+      "device": "desktop",
+      "width": 1430,
+      "height": 993
+    },
+    {
+      "src": "assets/desktop-blog.webp",
+      "alt": "Linoxa · 期刊",
+      "device": "desktop",
+      "width": 1430,
+      "height": 993
+    },
+    {
+      "src": "assets/desktop-contact.webp",
+      "alt": "Linoxa · 联系",
+      "device": "desktop",
+      "width": 1430,
+      "height": 993
+    },
+    {
+      "src": "assets/tablet-home.webp",
+      "alt": "Linoxa · 首页",
+      "device": "tablet",
+      "width": 824,
+      "height": 1166
+    },
+    {
+      "src": "assets/tablet-service.webp",
+      "alt": "Linoxa · 服务",
+      "device": "tablet",
+      "width": 824,
+      "height": 1166
+    },
+    {
+      "src": "assets/tablet-blog.webp",
+      "alt": "Linoxa · 期刊",
+      "device": "tablet",
+      "width": 824,
+      "height": 1166
+    },
+    {
+      "src": "assets/tablet-contact.webp",
+      "alt": "Linoxa · 联系",
+      "device": "tablet",
+      "width": 824,
+      "height": 1166
+    },
+    {
+      "src": "assets/mobile-home.webp",
+      "alt": "Linoxa · 首页",
+      "device": "mobile",
+      "width": 380,
+      "height": 822
+    },
+    {
+      "src": "assets/mobile-service.webp",
+      "alt": "Linoxa · 服务",
+      "device": "mobile",
+      "width": 380,
+      "height": 822
+    },
+    {
+      "src": "assets/mobile-blog.webp",
+      "alt": "Linoxa · 期刊",
+      "device": "mobile",
+      "width": 380,
+      "height": 822
+    },
+    {
+      "src": "assets/mobile-contact.webp",
+      "alt": "Linoxa · 联系",
+      "device": "mobile",
+      "width": 380,
+      "height": 822
+    }
+  ],
+  "surfaces": [
+    {
+      "id": "site",
+      "name": "站点",
+      "platform": "pc",
+      "locales": [
+        "zh",
+        "en"
+      ],
+      "pages": [
+        {
+          "slug": "",
+          "title": "首页 01",
+          "localizedTitles": {
+            "en": "Home 01"
+          }
+        },
+        {
+          "slug": "home-two",
+          "title": "首页 02",
+          "localizedTitles": {
+            "en": "Home 02"
+          }
+        },
+        {
+          "slug": "home-three",
+          "title": "首页 03",
+          "localizedTitles": {
+            "en": "Home 03"
+          }
+        },
+        {
+          "slug": "about",
+          "title": "关于我们",
+          "localizedTitles": {
+            "en": "About"
+          }
+        },
+        {
+          "slug": "service",
+          "title": "设计服务",
+          "localizedTitles": {
+            "en": "Service"
+          }
+        },
+        {
+          "slug": "portfolio-one",
+          "title": "精选作品 01",
+          "localizedTitles": {
+            "en": "Portfolio 01"
+          }
+        },
+        {
+          "slug": "blog-one",
+          "title": "设计期刊 01",
+          "localizedTitles": {
+            "en": "Blog 01"
+          }
+        },
+        {
+          "slug": "pricing-one",
+          "title": "设计方案 01",
+          "localizedTitles": {
+            "en": "Pricing 01"
+          }
+        },
+        {
+          "slug": "contact-one",
+          "title": "联系我们 01",
+          "localizedTitles": {
+            "en": "Contact 01"
+          }
+        },
+        {
+          "slug": "portfolio-two",
+          "title": "精选作品 02",
+          "localizedTitles": {
+            "en": "Portfolio 02"
+          }
+        },
+        {
+          "slug": "blog-two",
+          "title": "设计期刊 02",
+          "localizedTitles": {
+            "en": "Blog 02"
+          }
+        },
+        {
+          "slug": "pricing-two",
+          "title": "设计方案 02",
+          "localizedTitles": {
+            "en": "Pricing 02"
+          }
+        },
+        {
+          "slug": "contact-two",
+          "title": "联系我们 02",
+          "localizedTitles": {
+            "en": "Contact 02"
+          }
+        },
+        {
+          "slug": "portfolio-three",
+          "title": "精选作品 03",
+          "localizedTitles": {
+            "en": "Portfolio 03"
+          }
+        },
+        {
+          "slug": "blog-three",
+          "title": "设计期刊 03",
+          "localizedTitles": {
+            "en": "Blog 03"
+          }
+        },
+        {
+          "slug": "pricing-three",
+          "title": "设计方案 03",
+          "localizedTitles": {
+            "en": "Pricing 03"
+          }
+        },
+        {
+          "slug": "contact-three",
+          "title": "联系我们 03",
+          "localizedTitles": {
+            "en": "Contact 03"
+          }
+        },
+        {
+          "slug": "projects/contemporary-retreat",
+          "title": "当代静居",
+          "localizedTitles": {
+            "en": "Contemporary retreat"
+          }
+        },
+        {
+          "slug": "projects/modern-facade-study",
+          "title": "现代立面研究",
+          "localizedTitles": {
+            "en": "Modern facade study"
+          }
+        },
+        {
+          "slug": "projects/urban-living-concept",
+          "title": "城市生活构想",
+          "localizedTitles": {
+            "en": "Urban living concept"
+          }
+        },
+        {
+          "slug": "projects/minimal-space-design",
+          "title": "极简空间设计",
+          "localizedTitles": {
+            "en": "Minimal space design"
+          }
+        },
+        {
+          "slug": "projects/concrete-harmony",
+          "title": "混凝土协奏",
+          "localizedTitles": {
+            "en": "Concrete harmony"
+          }
+        },
+        {
+          "slug": "projects/spatial-innovation",
+          "title": "空间新生",
+          "localizedTitles": {
+            "en": "Spatial innovation"
+          }
+        },
+        {
+          "slug": "projects/sustainable-habitat",
+          "title": "可持续栖居",
+          "localizedTitles": {
+            "en": "Sustainable habitat"
+          }
+        },
+        {
+          "slug": "projects/timeless-structure",
+          "title": "恒久之构",
+          "localizedTitles": {
+            "en": "Timeless structure"
+          }
+        },
+        {
+          "slug": "projects/refined-living",
+          "title": "精致日常",
+          "localizedTitles": {
+            "en": "Refined living"
+          }
+        },
+        {
+          "slug": "projects/elegant-form",
+          "title": "优雅之形",
+          "localizedTitles": {
+            "en": "Elegant form"
+          }
+        },
+        {
+          "slug": "projects/visionary-hub",
+          "title": "未来共创中心",
+          "localizedTitles": {
+            "en": "Visionary hub"
+          }
+        },
+        {
+          "slug": "projects/urban-essence",
+          "title": "城市本质",
+          "localizedTitles": {
+            "en": "Urban essence"
+          }
+        },
+        {
+          "slug": "blog/trends-shaping-modern-architectural-design",
+          "title": "塑造当代建筑的设计趋势",
+          "localizedTitles": {
+            "en": "Trends shaping modern architectural design"
+          }
+        },
+        {
+          "slug": "blog/evolution-of-architecture-through-time",
+          "title": "时间中的建筑演变",
+          "localizedTitles": {
+            "en": "Evolution of architecture through time"
+          }
+        },
+        {
+          "slug": "blog/the-influence-of-cultural-context-on-design",
+          "title": "文化语境如何影响设计",
+          "localizedTitles": {
+            "en": "The influence of cultural context on design"
+          }
+        },
+        {
+          "slug": "blog/sustainable-solutions-in-urban-architecture",
+          "title": "城市建筑的可持续解法",
+          "localizedTitles": {
+            "en": "Sustainable solutions in urban architecture"
+          }
+        },
+        {
+          "slug": "blog/historic-preservation-in-modern-design",
+          "title": "当代设计中的历史保护",
+          "localizedTitles": {
+            "en": "Historic preservation in modern design"
+          }
+        },
+        {
+          "slug": "blog/enhancing-homes-through-architectural-design",
+          "title": "用建筑设计改善居住",
+          "localizedTitles": {
+            "en": "Enhancing homes through architectural design"
+          }
+        },
+        {
+          "slug": "blog/designing-spaces-with-timeless-elegance",
+          "title": "设计经得起时间的优雅空间",
+          "localizedTitles": {
+            "en": "Designing spaces with timeless elegance"
+          }
+        },
+        {
+          "slug": "blog/urban-design-principles-for-better-living",
+          "title": "让生活更好的城市设计原则",
+          "localizedTitles": {
+            "en": "Urban design principles for better living"
+          }
+        },
+        {
+          "slug": "blog/the-intersection-of-art-and-architecture",
+          "title": "艺术与建筑的交汇",
+          "localizedTitles": {
+            "en": "The intersection of art and architecture"
+          }
+        },
+        {
+          "slug": "404",
+          "title": "未找到页面",
+          "localizedTitles": {
+            "en": "Page not found"
+          }
+        }
+      ]
+    }
+  ],
+  "license": {
+    "type": "restricted",
+    "file": "docs/LICENSE.md",
+    "summary": "定制实现；参考图片、视频与英文内容的商业再分发授权尚未确认，字体按随附许可使用",
+    "redistributionAllowed": false
+  },
+  "localizedNames": {
+    "en": "Linoxa · Architecture & Interior Design"
+  },
+  "localizedSummaries": {
+    "en": "A bilingual architecture and interior design template with 39 pages, three home and collection layouts, 12 projects and 9 articles, local media and interactive motion."
+  }
+}

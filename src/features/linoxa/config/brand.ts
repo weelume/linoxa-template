@@ -1,0 +1,1 @@
+export const brand={name:{zh:'Linoxa',en:'LINOXA'},email:'hello@linoxa.design',address:{zh:'美国加利福尼亚州 Sandtown 410 号',en:'410 Sandtown, California 94001, USA'},copyright:'2026 Linoxa',logo:'/templates/linoxa/WKYsCmjBGR7PbJJYtG1NOW4Rw.svg'}

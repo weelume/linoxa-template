@@ -1,0 +1,219 @@
+{
+  "$schema": "./schemas/customization.schema.json",
+  "format": "git-template-customization",
+  "formatVersion": "0.2.0",
+  "entries": [
+    {
+      "id": "brand",
+      "title": "修改品牌与联系信息",
+      "description": "集中调整独立品牌、Logo、联系方式与版权；消费方配置通过显式Provider注入。",
+      "files": [
+        {
+          "path": "src/features/linoxa/config/brand.ts",
+          "kind": "file",
+          "purpose": "品牌配置"
+        },
+        {
+          "path": "src/features/linoxa/host.tsx",
+          "kind": "file",
+          "purpose": "消费方配置接口"
+        },
+        {
+          "path": "src/features/linoxa/components/Layout.tsx",
+          "kind": "file",
+          "purpose": "品牌与导航展示"
+        }
+      ],
+      "constraints": [
+        "页面不得重复硬编码品牌",
+        "独立工程不写入消费方专属品牌、路径或接入记录",
+        "不得写入真实凭据"
+      ],
+      "checks": [
+        "typecheck",
+        "lint"
+      ]
+    },
+    {
+      "id": "content",
+      "title": "编辑中英文内容",
+      "description": "编辑工作室、服务、常见问题、作品与文章内容；报价和表单配置目前位于对应页面。",
+      "files": [
+        {
+          "path": "src/features/linoxa/content/studio.ts",
+          "kind": "file",
+          "purpose": "工作室、服务、轮播与FAQ文案"
+        },
+        {
+          "path": "src/features/linoxa/content/collections.ts",
+          "kind": "file",
+          "purpose": "12项目与9文章双语内容"
+        },
+        {
+          "path": "src/features/linoxa/pages/PricingPage.tsx",
+          "kind": "file",
+          "purpose": "方案名称、演示报价与功能列表"
+        },
+        {
+          "path": "src/features/linoxa/pages/ContactPage.tsx",
+          "kind": "file",
+          "purpose": "表单字段、校验与提示"
+        }
+      ],
+      "constraints": [
+        "同时维护中英文、标签和表单提示",
+        "演示内容不得描述为真实业绩或交易承诺",
+        "表单保持本地校验；真实发送需要显式需求和接口设计"
+      ],
+      "checks": [
+        "typecheck",
+        "lint",
+        "test"
+      ]
+    },
+    {
+      "id": "theme",
+      "title": "调整主题与响应式排版",
+      "description": "修改集中主题令牌、浅深色区块、字体、滚动条及集合页面样式。",
+      "files": [
+        {
+          "path": "src/features/linoxa/theme.css",
+          "kind": "file",
+          "purpose": "主题、通用布局、字体与滚动条"
+        },
+        {
+          "path": "src/features/linoxa/pages/collections.css",
+          "kind": "file",
+          "purpose": "作品、期刊与详情的局部主题和布局"
+        }
+      ],
+      "constraints": [
+        "优先调整主题令牌，保留模板作用域",
+        "保留三端布局与减少动态设置",
+        "不隐藏意外溢出，不让模板样式污染其他页面"
+      ],
+      "checks": [
+        "typecheck",
+        "build"
+      ]
+    },
+    {
+      "id": "components",
+      "title": "修改公共交互与动效",
+      "description": "维护导航、轮播、拖拽、视频、FAQ、服务切换与公共运动组件。",
+      "files": [
+        {
+          "path": "src/features/linoxa/components",
+          "kind": "directory",
+          "purpose": "复用布局、动效和交互"
+        },
+        {
+          "path": "docs/MOTION.md",
+          "kind": "file",
+          "purpose": "原站观察、实现位置与未验证事项"
+        }
+      ],
+      "constraints": [
+        "不得以统一淡入替代原站不同类型动效",
+        "保留键盘、触控、暂停控制和减少动态分支",
+        "动效参数变化须实际触发检查，不以静态图代替"
+      ],
+      "checks": [
+        "typecheck",
+        "lint",
+        "build"
+      ]
+    },
+    {
+      "id": "pages",
+      "title": "调整页面组合与展示素材",
+      "description": "按职责组合页面区块，更新本地素材和真实展示截图。",
+      "files": [
+        {
+          "path": "src/features/linoxa/pages",
+          "kind": "directory",
+          "purpose": "各类页面组合"
+        },
+        {
+          "path": "public/templates/linoxa",
+          "kind": "directory",
+          "purpose": "本地运行图片、字体与视频"
+        },
+        {
+          "path": "src/features/linoxa/content/screenshots.json",
+          "kind": "file",
+          "purpose": "运行时截图注册"
+        },
+        {
+          "path": ".tpl/template.json",
+          "kind": "file",
+          "purpose": "纯JSON市场页面与截图资料"
+        },
+        {
+          "path": "docs/ASSETS.md",
+          "kind": "file",
+          "purpose": "素材来源与权利记录"
+        }
+      ],
+      "constraints": [
+        "截图须来自真实运行并记录实际解码尺寸",
+        "不伪造素材授权或验收通过",
+        "动态视频不得擅自改为静态图片"
+      ],
+      "checks": [
+        "typecheck",
+        "lint",
+        "test",
+        "build"
+      ]
+    },
+    {
+      "id": "router",
+      "title": "新增页面或调整语言路径",
+      "description": "同步独立应用路由、共享包页面注册、内容集合与纯JSON模板目录。",
+      "files": [
+        {
+          "path": "src/features/linoxa/template.tsx",
+          "kind": "file",
+          "purpose": "共享模板页面注册"
+        },
+        {
+          "path": "src/app/[[...slug]]/page.tsx",
+          "kind": "file",
+          "purpose": "语言和slug路由解析"
+        },
+        {
+          "path": "src/app/not-found.tsx",
+          "kind": "file",
+          "purpose": "未知路径404"
+        },
+        {
+          "path": "src/features/linoxa/types.ts",
+          "kind": "file",
+          "purpose": "页面类型、路径及素材工具"
+        },
+        {
+          "path": ".tpl/template.json",
+          "kind": "file",
+          "purpose": "市场页面结构"
+        },
+        {
+          "path": ".tpl/project.json",
+          "kind": "file",
+          "purpose": "语言基础路径与服务合同"
+        }
+      ],
+      "constraints": [
+        "默认中文，英文使用/en，切换保持对应页与查询锚点",
+        "同一响应式站点不按设备重复注册业务端",
+        "未知slug必须明确404，不展示其他条目内容"
+      ],
+      "checks": [
+        "typecheck",
+        "lint",
+        "test",
+        "build"
+      ]
+    }
+  ]
+}
