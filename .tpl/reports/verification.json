@@ -3,9 +3,9 @@
   "format": "git-template-verification",
   "formatVersion": "0.2.0",
   "status": "passed",
-  "checkedAt": "2026-11-02T16:51:44.897Z",
-  "sourceCommit": "2d8bf5bf9ed76521fc02caaef180c0af23ce5f37",
-  "sourceDigest": "c0ce6867519edf3e3041892ba99df706418257a25efc569584f0ae29ad34e939",
+  "checkedAt": "2026-11-02T17:02:13.341Z",
+  "sourceCommit": "b53121219b66a30bdb8164880f8de71de6a46489",
+  "sourceDigest": "bf7ee3a00fbdfebe8ef0a222d674b8eb71e2609d309575f1565adb37dcf6982b",
   "environment": {
     "platform": "linux",
     "arch": "x64",
@@ -25,8 +25,8 @@
       ],
       "status": "passed",
       "exitCode": 0,
-      "startedAt": "2026-11-02T16:44:24.187Z",
-      "finishedAt": "2026-11-02T16:44:26.797Z"
+      "startedAt": "2026-11-02T16:59:05.235Z",
+      "finishedAt": "2026-11-02T16:59:14.547Z"
     },
     {
       "id": "lint",
@@ -38,8 +38,8 @@
       ],
       "status": "passed",
       "exitCode": 0,
-      "startedAt": "2026-11-02T16:44:26.799Z",
-      "finishedAt": "2026-11-02T16:44:30.076Z"
+      "startedAt": "2026-11-02T16:59:14.553Z",
+      "finishedAt": "2026-11-02T16:59:19.139Z"
     },
     {
       "id": "test",
@@ -51,8 +51,8 @@
       ],
       "status": "passed",
       "exitCode": 0,
-      "startedAt": "2026-11-02T16:44:30.076Z",
-      "finishedAt": "2026-11-02T16:44:30.958Z"
+      "startedAt": "2026-11-02T16:59:19.141Z",
+      "finishedAt": "2026-11-02T16:59:20.209Z"
     },
     {
       "id": "build",
@@ -64,8 +64,8 @@
       ],
       "status": "passed",
       "exitCode": 0,
-      "startedAt": "2026-11-02T16:44:30.959Z",
-      "finishedAt": "2026-11-02T16:44:51.953Z"
+      "startedAt": "2026-11-02T16:59:20.211Z",
+      "finishedAt": "2026-11-02T16:59:52.184Z"
     }
   ],
   "services": [
@@ -73,7 +73,7 @@
       "id": "web",
       "status": "passed",
       "stopped": true,
-      "checkedAt": "2026-11-02T16:51:44.897Z",
+      "checkedAt": "2026-11-02T17:01:55.665Z",
       "reason": "本地 WSL 独立克隆生产构建启动后，78条双语页面和未知路径404共79项HTTP验证通过；隔离端口43655，本次服务已停止。"
     }
   ],
