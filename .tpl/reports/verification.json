@@ -1,0 +1,87 @@
+{
+  "$schema": "../schemas/verification.schema.json",
+  "format": "git-template-verification",
+  "formatVersion": "0.2.0",
+  "status": "passed",
+  "checkedAt": "2026-11-02T16:50:56.197Z",
+  "sourceCommit": "2d8bf5bf9ed76521fc02caaef180c0af23ce5f37",
+  "sourceDigest": "c0ce6867519edf3e3041892ba99df706418257a25efc569584f0ae29ad34e939",
+  "environment": {
+    "platform": "linux",
+    "arch": "x64",
+    "node": "v24.16.0",
+    "packageManager": "9.15.4",
+    "cleanDirectory": true,
+    "localGitClone": true
+  },
+  "checks": [
+    {
+      "id": "typecheck",
+      "cwd": ".",
+      "argv": [
+        "pnpm",
+        "run",
+        "typecheck"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-11-02T16:44:24.187Z",
+      "finishedAt": "2026-11-02T16:44:26.797Z"
+    },
+    {
+      "id": "lint",
+      "cwd": ".",
+      "argv": [
+        "pnpm",
+        "run",
+        "lint"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-11-02T16:44:26.799Z",
+      "finishedAt": "2026-11-02T16:44:30.076Z"
+    },
+    {
+      "id": "test",
+      "cwd": ".",
+      "argv": [
+        "pnpm",
+        "run",
+        "test"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-11-02T16:44:30.076Z",
+      "finishedAt": "2026-11-02T16:44:30.958Z"
+    },
+    {
+      "id": "build",
+      "cwd": ".",
+      "argv": [
+        "pnpm",
+        "run",
+        "build"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-11-02T16:44:30.959Z",
+      "finishedAt": "2026-11-02T16:44:51.953Z"
+    }
+  ],
+  "services": [
+    {
+      "id": "web",
+      "status": "passed",
+      "stopped": true,
+      "checkedAt": "2026-11-02T16:50:56.199Z",
+      "reason": "本地 WSL 独立克隆生产构建启动后，78条双语页面和未知路径404共79项HTTP验证通过；隔离端口43655，本次服务已停止。"
+    }
+  ],
+  "limitations": [
+    "已实现主要动效并验证文字入场、轮播暂停、服务切换、FAQ与三端视频播放；未完成39页全部动效的原站逐帧量化比较，不能声明完整1:1。",
+    "PC/iPad/H5及320px窄屏双语布局检查通过；系统减少动态设置、触控惯性和桌面图库拖拽未实机逐项验证。",
+    "原站项目与文章详情存在重复标题和正文；本实现按slug校正，使用独有双语演示内容。",
+    "图片、视频和原站内容的商业再分发授权尚未确认；模板保持未上架。",
+    "表单只执行本地校验，不发送或保存数据。"
+  ]
+}
